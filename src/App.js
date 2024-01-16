@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import logo from './logo.jpg';
 import './App.css';
+import {CritterSwitcher} from "./CritterSwitcher";
+import FactSwitcher from './FactSwitcher';
 
 function App() {
+  // return (
+  //   <div className="App">
+  //     <body className="App-body">
+  //       <h1>Animal Generator</h1>
+  //       <p>
+  //         Click the button below to generate a random animal.
+  //       </p>
+  //       <img src={logo} className="App-logo" alt="logo" />
+  //       <CritterSwitcher randomGenerator={() => Math.floor(Math.random() * 100)}/>
+  //     </body>
+  //   </div>
+  // );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <FactSwitcher />
+  )
 }
 
 export default App;
